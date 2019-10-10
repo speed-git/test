@@ -11,5 +11,4 @@ def my_render(request, template_path, context_dict={}):
     context = RequestContext(request, context_dict)
     # 3.模板渲染:产生标准的html内容
     res_html = temp.render(context)
-    # 4.返回给浏览器
-    return HttpResponse(res_html)
+    return HttpResponse('ok')
